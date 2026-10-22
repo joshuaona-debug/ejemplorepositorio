@@ -21,6 +21,10 @@
     --white:#fff;
     --black:#000;
 
+    /*TYPOGRAOHY*/
+    --font_principal: "Montserrat Alternates"
+    var
+
     /* SPACERS */
 
     --s8: 8px;
@@ -87,4 +91,34 @@ body{
     height: 683px;
     background: var(--stroke);
     color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--s24);
 }
+.course-description h2{
+    font-size: var(--title_M)
+}
+.course-description div{
+    width: 688px;
+    font-size: var(--body_L);
+    display: flex;
+    flex-direction: column;
+    gap: var(--s16);
+}
+
+.students-grid{
+    display: flex;
+    flex-wrap: wrap; /*Elementos se acomodan bajando entre filas*/
+    gap: var(--s24);
+}
+
+.students-grid .student-card{
+    width: 263px;
+    height: 110px;
+    padding: var(--s24);
+    border: 1px solid black;
+    border-radius: var(--s16);
+}
+
+.students-grid .student-card h3{}
