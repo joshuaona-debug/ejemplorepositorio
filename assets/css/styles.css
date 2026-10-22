@@ -23,7 +23,8 @@
 
     /*TYPOGRAOHY*/
     --font_principal: "Montserrat Alternates"
-    var
+    --title_SM: 62px;
+    --title_M: 114px;
 
     /* SPACERS */
 
@@ -111,6 +112,7 @@ body{
     display: flex;
     flex-wrap: wrap; /*Elementos se acomodan bajando entre filas*/
     gap: var(--s24);
+    justify-content: space-between;
 }
 
 .students-grid .student-card{
@@ -119,6 +121,27 @@ body{
     padding: var(--s24);
     border: 1px solid black;
     border-radius: var(--s16);
+    overflow: hidden;
 }
 
-.students-grid .student-card h3{}
+.students-grid .student-card a{
+    width: 263px;
+    height: 110px;
+    padding: var(--s24);
+    transition: all 300ms;
+    color: var(--black);
+    background: url(..images/line-md_log-out.svg) no-repeat 213px center;
+    background-size: 24px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.students-grid .student-card a:hover{
+    background: var(--primary) url(..images/line-md_log-out.svg) no-repeat;
+}
+
+.students-grid .student-card h3{
+    font-size: var(--title_SM);
+    width: 179px;
+}
